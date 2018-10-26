@@ -1,0 +1,179 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title></title>
+<style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+    @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+    .ReadMsgBody {
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    .ExternalClass {
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+        line-height: 100%;
+    }
+
+    html {
+        width: 100%;
+    }
+
+    body {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+
+    table td {
+        border-collapse: collapse;
+    }
+
+    .yshortcuts a {
+        border-bottom: none !important;
+    }
+
+    img {
+        display: block !important;
+    }
+
+    a {
+        text-decoration: none;
+        color: #a0cf50;
+    }
+
+    /* Media Queries */
+
+    @media only screen and (max-width: 600px) {
+        body {
+            width: auto !important;
+        }
+
+        table[class="table600"] {
+            width: 100% !important;
+        }
+
+        table[class="table-container"] {
+            width: 90% !important;
+        }
+
+        table[class="container2-2"] {
+            width: 47% !important;
+            text-align: left !important;
+        }
+
+        table[class="full-width"] {
+            width: 100% !important;
+            text-align: center !important;
+        }
+
+        img[class="img-full"] {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        body {
+            width: 100% !important;
+        }
+
+        table[class="table600"] {
+            width: 100% !important;
+        }
+
+        table[class="table-container"] {
+            width: 82% !important;
+        }
+
+        table[class="container2-2"] {
+            width: 100% !important;
+            text-align: left !important;
+        }
+
+        table[class="full-width"] {
+            width: 100% !important;
+            text-align: center !important;
+        }
+
+        img[class="img-full"] {
+            width: 100% !important;
+        }
+    }
+
+</style>
+<div class="module-container" data-module="only_logo">    <!-- Only Logo -->
+    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td data-bgcolor="Main" align="center">
+                <table class="table600" width="600" border="0" cellpadding="0" cellspacing="0" style="margin: 15px;"
+                       bgcolor="#ffffff">
+                    <tbody>
+                    <tr>
+                        <td data-editable="image" align="center">
+                            <a href="http://www.only.in/">
+                                <img id="logoImage"
+                                     src="https://www.vphrase.com/wp-content/uploads/2017/09/vPhrase_logo_large.png"
+                                     alt="img" height="auto"
+                                     style="margin-right:0px !important; margin-left:0px !important; padding-top:10px;">
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="module-container" data-module="only_module_image">    <!-- ARTICLE FULL -->
+    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td data-bgcolor="Main" align="center">
+                <table class="table600" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                    <tbody>
+                    <tr>
+                        <td height="30" style="font-size: 1px; line-height: 30px;">&nbsp;</td>
+                    </tr>
+                    {% for img in img_src %}
+                        <tr>
+
+                            {% if len == 1 %}
+                                <td data-editable="image" align="center">
+                                    <img class="img-full"
+                                         src="{{ img }}" alt="img"
+                                         width="600" height="auto">
+                                </td>
+                            {% else %}
+                                <td data-editable="image">
+                                    <img class="img-not-full"
+                                         src="{{ img }}" alt="img"
+                                         width="300" height="auto" style="padding: 15px; margin: 15px; display: flex">
+                                </td>
+                            {% endif %}
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                        <td height="30" style="font-size: 1px; line-height: 30px;">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- END ARTICLE FULL -->
+</div>

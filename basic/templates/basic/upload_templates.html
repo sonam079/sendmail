@@ -1,0 +1,25 @@
+{% extends 'basic/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="Post" role="form" enctype="multipart/form-data">
+                    <div class="col-md-8" align="center">
+                        {% for form in upload_form %}
+                            {{ form }}
+                        {% endfor %}
+                        {% for form in upload_form.errors %}
+                            {{ form }}
+                        {% endfor %}
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-default" style="background-color: #00bda0; color: #fff" type="submit">
+                            Upload
+                        </button>
+                    </div>
+                    {% csrf_token %}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

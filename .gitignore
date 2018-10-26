@@ -1,0 +1,16 @@
+venv
+myvenv
+mailvenv
+*.pyc
+*~
+*/__pycache__/
+**/__pycache__/
+__pycache__
+db.sqlite3
+/static
+.DS_Store
+.idea/
+media/**
+!media/**/init.txt
+media/
+geckodriver.log
