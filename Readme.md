@@ -1,6 +1,6 @@
 # Project Title
 
-vPhrase Send Mail Django Web App
+Send Mail Using Django Web App
 
 ## Getting Started
 
@@ -12,6 +12,7 @@ You should have used selenium atleast once in your unix/windows system.
 Otherwise it may give you error like `geckodriver should be in execeution path` .
 You can search this error(if you get error like this) on internet and `Stackoverflow`
 has lots of answer for this question.
+You have to make SMTP server and provide your credentials in Settings.py for working of this project.
 
 ### Installing
 
